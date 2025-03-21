@@ -50,17 +50,22 @@
       margin: auto;
     }
     .hub-tile {
-      background-color: #1e1e1e;
-      border: 1px solid #333;
-      border-radius: 1rem;
-      padding: 2rem;
-      text-align: center;
-      transition: transform 0.3s ease;
-      cursor: pointer;
-      position: relative;
-    }
-    .hub-tile:hover {
-      border-color: #00ccff;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  color: #00ccff;  /* Fixes text color */
+}
+
+.hub-tile:hover {
+  border-color: #00ccff;
+  background-color: #222;
+}
+  
     }
     .hub-tile.clicked {
       animation: pulse 0.4s ease;

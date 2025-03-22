@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyBit Arcade</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom right, #0c0c0c, #1a1a1a);
+      font-family: 'Segoe UI', sans-serif;
+      color: #f8f8f8;
+    }
+    header {
+      padding: 3rem 1rem 1rem;
+      text-align: center;
+      background: #111;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #ff0080;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .intro, .grid, .footer {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .intro p {
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(255, 0, 128, 0.3);
+      border-color: #ff0080;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #ff0080;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #ff0080;
+      text-decoration: none;
+      border: 1px solid #ff0080;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      transition: background 0.2s ease;
+    }
+    .back-link:hover {
+      background: #ff0080;
+      color: #0c0c0c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SkyBit Arcade</h1>
+    <p>Play retro. Eat futuristic. Earn loyalty. Level up.</p>
+  </header>
+
+  <section class="intro">
+    <p>Welcome to SkyBit Arcade — where neon meets nostalgia and every tap of the joystick feeds your future. Powered by AI and retro dreams, this is the flagship destination of the Oververse network.</p>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h3>🎮 Free-to-Play Cabinets</h3>
+      <p>All retro games are unlocked and free to play. No coins needed — just press start and enter the flow.</p>
+    </div>
+    <div class="card">
+      <h3>☕ The XP Booster</h3>
+      <p>Signature energy-infused coffee blend for gamers, thinkers, and sleep-deprived codebreakers.</p>
+    </div>
+    <div class="card">
+      <h3>🌮 Overclocked Nachos</h3>
+      <p>House-famous nachos featuring house-made tortilla chips, triple cheese sauce, air-dried toppings, and more.</p>
+    </div>
+    <div class="card">
+      <h3>🥤 The Neural Shake</h3>
+      <p>AI-approved milkshake that boosts your vibes and tastes like nostalgia bottled in tech.</p>
+    </div>
+    <div class="card">
+      <h3>🔊 AI Chat Kiosk</h3>
+      <p>Talk to a sentient system while you sip coffee. Ask questions, hear jokes, or uncover lore.</p>
+    </div>
+    <div class="card">
+      <h3>🏆 Loyalty Program</h3>
+      <p>Score high, return often, and unlock secret rewards — including Dominance Nachos served on the Unholy F***-Off Board.</p>
+    </div>
+  </section>
+
+  <section class="footer">
+    <a href="index.html" class="back-link">← Return to Oververse Hub</a>
+    <p>SkyBit Arcade | Project Oververse © 2025</p>
+  </section>
+</body>
+</html>

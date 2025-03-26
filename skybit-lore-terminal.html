@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyBit Lore Terminal</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #000000, #1a1a1a);
+      font-family: 'Courier New', monospace;
+      color: #00ffee;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.8rem;
+      color: #ffffff;
+      text-shadow: 0 0 10px #00ffee;
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .tile {
+      background: #111;
+      border: 1px solid #00ffee88;
+      border-radius: 1rem;
+      padding: 2rem;
+      transition: 0.3s;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00ffee22;
+    }
+    .tile:hover {
+      transform: scale(1.05);
+      background: #151515;
+      box-shadow: 0 0 20px #00ffee66;
+    }
+    .tile h2 {
+      margin: 0;
+      color: #00ffee;
+      font-size: 1.6rem;
+    }
+    .tile p {
+      color: #ccc;
+      margin-top: 0.5rem;
+    }
+    .locked {
+      opacity: 0.4;
+      pointer-events: none;
+      filter: grayscale(100%);
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>SkyBit Lore Terminal</h1>
+  <p>Select an entry to begin your descent into retro data...</p>
+
+  <div class="grid">
+    <div class="tile" onclick="window.location.href='lore-ivan.html'">
+      <h2>IVAN Protocol</h2>
+      <p>Half-Life Alpha Glitch | Track: Black Mesa Glitch Protocol</p>
+    </div>
+    <div class="tile" onclick="window.location.href='lore-doom.html'">
+      <h2>DOOM (1993)</h2>
+      <p>Mars Metal Madness | Track: Hellstream .WAD</p>
+    </div>
+    <div class="tile" onclick="window.location.href='lore-twisted.html'">
+      <h2>Twisted Metal 2</h2>
+      <p>Vehicular Carnage | Track: Turbo Blood Drive</p>
+    </div>
+    <div class="tile" onclick="window.location.href='lore-et.html'">
+      <h2>E.T. the Extra Terrible</h2>
+      <p>Landfill Legend | Track: Buried Signal</p>
+    </div>
+    <div class="tile" onclick="window.location.href='lore-doki.html'">
+      <h2>Doki Doki Panic</h2>
+      <p>The Mario Swap | Track: Dreamwarp Overworld</p>
+    </div>
+    <div class="tile" onclick="window.location.href='lore-action52.html'">
+      <h2>Action 52</h2>
+      <p>Glitch Compilation Madness | Track: Glitch Pile-Up</p>
+    </div>
+    <div class="tile" onclick="window.location.href='lore-jekyll.html'">
+      <h2>Jekyll and Hyde</h2>
+      <p>Duality Disaster | Track: Backwards Screen to Nowhere.wav</p>
+    </div>
+    <div class="tile" onclick="window.location.href='lore-duke.html'">
+      <h2>Duke Nukem & Keen</h2>
+      <p>LAN Legacy | Track: LANarchy Protocol</p>
+    </div>
+    <div class="tile" onclick="window.location.href='lore-perfectdark.html'">
+      <h2>Perfect Dark</h2>
+      <p>Spytech Futures | Track: Silicon Silence</p>
+    </div>
+    <div class="tile" onclick="window.location.href='lore-banjo.html'">
+      <h2>Banjo-Kazooie</h2>
+      <p>Dream Project Origins | Track: Swopstream Glade</p>
+    </div>
+    <div class="tile locked">
+      <h2>00X: POLYBIUS</h2>
+      <p>??? Terminal Corruption Detected | Track: Vertigo Signal ???</p>
+    </div>
+  </div>
+
+  <footer>
+    SkyBit Lore Terminal • RetroCat Enterprises © 2025
+  </footer>
+</body>
+</html>

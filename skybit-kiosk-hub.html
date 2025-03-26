@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyBit Kiosk Hub</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #000000, #1a1a1a);
+      font-family: 'Courier New', monospace;
+      color: #00ffee;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.8rem;
+      color: #ffffff;
+      text-shadow: 0 0 10px #00ffee;
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .tile {
+      background: #111;
+      border: 1px solid #00ffee88;
+      border-radius: 1rem;
+      padding: 2rem;
+      transition: 0.3s;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00ffee22;
+    }
+    .tile:hover {
+      transform: scale(1.05);
+      background: #151515;
+      box-shadow: 0 0 20px #00ffee66;
+    }
+    .tile h2 {
+      margin: 0;
+      color: #00ffee;
+      font-size: 1.6rem;
+    }
+    .tile p {
+      color: #ccc;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>SkyBit Kiosk Terminal</h1>
+  <p>Select your XP Tier to begin...</p>
+
+  <div class="grid">
+    <div class="tile" onclick="window.location.href='skybit-kiosk-tier0.html'">
+      <h2>Tier 0</h2>
+      <p>The Casual</p>
+    </div>
+    <div class="tile" onclick="window.location.href='skybit-kiosk-tier1-fixed.html'">
+      <h2>Tier 1</h2>
+      <p>Snark Enabled</p>
+    </div>
+    <div class="tile" onclick="window.location.href='skybit-kiosk-tier2-clean.html'">
+      <h2>Tier 2</h2>
+      <p>Insightful Mode</p>
+    </div>
+    <div class="tile" onclick="window.location.href='skybit-kiosk-tier3-clean.html'">
+      <h2>Tier 3</h2>
+      <p>Conversational Core</p>
+    </div>
+    <div class="tile" onclick="window.location.href='skybit-kiosk-tier4.html'">
+      <h2>Tier 4</h2>
+      <p>Architect Access</p>
+    </div>
+  </div>
+
+  <footer>
+    SkyBit Interface Hub • RetroCat Enterprises © 2025
+  </footer>
+</body>
+</html>

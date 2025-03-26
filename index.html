@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Oververse Hub</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom right, #000000, #1a1a1a);
+      font-family: 'Segoe UI', sans-serif;
+      color: #f8f8f8;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem 3.5rem;
+      background-color: #111;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      color: #00ccff;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+    .hub-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 3rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .hub-tile {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 1rem;
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      position: relative;
+      color: #00ccff;
+    }
+    .hub-tile:hover {
+      border-color: #00ccff;
+      background-color: #222;
+      box-shadow: 0 0 15px rgba(0, 204, 255, 0.5);
+    }
+    .hub-tile:active {
+      transform: scale(0.98);
+      box-shadow: 0 0 25px rgba(0, 204, 255, 0.7);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+  <script>
+    function playHoverSound() {
+      try {
+        if (typeof Audio !== "undefined") {
+          const audio = new Audio('https://retrocat-enterprises.github.io/oververse-assets/hover-sound.mp3');
+          audio.volume = 0.5;
+          audio.play().catch(error => console.warn("Hover sound playback failed", error));
+        }
+      } catch (e) {
+        console.error("Error playing hover sound: ", e);
+      }
+    }
+    function playSkybitSound() {
+      try {
+        if (typeof Audio !== "undefined") {
+          const audio = new Audio('https://retrocat-enterprises.github.io/oververse-assets/skybit-sound.mp3');
+          audio.volume = 0.5;
+          audio.play().catch(error => console.warn("Skybit sound playback failed", error));
+        }
+      } catch (e) {
+        console.error("Error playing Skybit sound: ", e);
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Oververse</h1>
+    <p>The central portal of RetroCat's empire — choose your destination.</p>
+  </header>
+
+  <section class="hub-grid">
+
+    <div class="hub-tile" id="skybitTile" onclick="playSkybitSound(); window.location.href='skybit-arcade.html';" onmouseover="playHoverSound()" data-lore="Run by sentient nachos and caffeine. Enter at your own risk.">
+      <h2>SkyBit Arcade</h2>
+      <p>Play retro. Eat futuristic. Level up your real-life XP.</p>
+    </div>
+
+    <div class="hub-tile" onclick="window.location.href='retrocat-enterprises.html'" onmouseover="playHoverSound()" data-lore="The control node. All business flows from here.">
+      <h2>RetroCat Enterprises</h2>
+      <p>The core intelligence behind every venture. Strategy, scale, and controlled chaos.</p>
+    </div>
+
+    <div class="hub-tile" onmouseover="playHoverSound()" style="opacity: 0.6; filter: grayscale(100%) blur(1px); cursor: not-allowed;" data-lore="Area locked: AI chefs attempting to rewrite physics.">
+      <h2>Chaos Aquarium</h2>
+      <p>[LOCKED] System offline. Awaiting initialization sequence...</p>
+    </div>
+
+    <div class="hub-tile" onclick="window.location.href='cognitive-wave-labs.html'" onmouseover="playHoverSound()" data-lore="Exploring neural uploads, sentient code, and memory immortality.">
+      <h2>Cognitive Wave Labs</h2>
+      <p>AI, neural uploading, and the future of consciousness. This is where sentience evolves.</p>
+    </div>
+
+  
+    <div class="hub-tile" onclick="window.location.href='skybit-lore-terminal.html'" onmouseover="playHoverSound()" data-lore="Declassified cartridges. Hidden truths. Earn XP or get corrupted.">
+      <h2>Lore Terminal</h2>
+      <p>Retro data vault — enter the glitch.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>RetroCat Enterprises | Project Oververse © 2025 — All systems monitored by AI. No refunds from the singularity.</p>
+  </footer>
+</body>
+</html>

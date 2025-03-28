@@ -1,51 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SkyBit Lore Terminal Entry – DOOM (1993)</title>
+  <meta charset="UTF-8">
+  <title>DOOM (1993) | SkyBit Lore Terminal</title>
   <style>
     body {
-      background: linear-gradient(to bottom right, #000000, #1a1a1a);
-      font-family: 'Courier New', monospace;
-      color: #00ffee;
+      background-color: #000000;
+      color: #00ffff;
+      font-family: monospace;
+      font-size: 18px;
+      padding: 2em;
       text-align: center;
-      padding: 2rem;
     }
     h1 {
-      font-size: 2rem;
       color: #ffffff;
-      text-shadow: 0 0 10px #00ffee;
+      text-shadow: 0 0 8px #00ffff;
+      font-size: 28px;
     }
-    p {
-      max-width: 800px;
-      margin: 1rem auto;
-      color: #ccc;
+    .track {
+      margin-top: 2em;
     }
-    .back {
-      margin-top: 3rem;
+    .footer {
+      margin-top: 4em;
+      color: #666;
+      font-size: 0.8em;
     }
-    button {
-      background-color: #00ffee;
-      color: #000;
-      border: none;
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
-      font-family: 'Courier New', monospace;
-      border-radius: 10px;
-      cursor: pointer;
-      box-shadow: 0 0 10px #00ffee66;
+    .back-button {
+      display: inline-block;
+      margin-top: 2em;
+      padding: 0.5em 1em;
+      background-color: #222;
+      color: #00ffff;
+      text-decoration: none;
+      border: 1px solid #00ffff;
+      border-radius: 4px;
+    }
+    .back-button:hover {
+      background-color: #111;
+      color: #00ffff;
+      border-color: #00ffff;
+      text-shadow: 0 0 8px #00ffff;
+    }
+    audio {
+      margin-top: 0.5em;
     }
   </style>
 </head>
 <body>
-  <h1>SkyBit Lore Terminal Entry – DOOM (1993)</h1>
-  <p><em>The game that changed everything.</em></p>
-  <p>1993. A shareware disc. A PC barely breathing. And then—DOOM. Built by id Software, DOOM didn't just define the first-person shooter—it ripped and tore it into existence. You weren’t just a player. You were a lone marine on Mars, shotgun in hand, descending into Hell with nothing but pixel violence and MIDI rage. DOOM spawned modding culture, LAN parties, rage soundtracks, and generations of game devs. It wasn’t just a game. It was a digital blood ritual.</p>
-  <p><br><strong>🎧 Listen to RetroCat’s Take:</strong> “Hellstream .WAD”</p>
 
-  <div class="back">
-   <button class="button" onclick="window.location.href='skybit-lore-terminal.html'">⬅ Return to Lore Terminal</button>
+  <h1>RC-DM-001 – DOOM (1993)</h1>
+
+  <p>
+    It wasn’t the first FPS, but it defined the genre.
+  </p>
+
+  <p>
+    In 1993, DOOM hit like a digital sledgehammer. Fast. Brutal. Unapologetic.<br>
+    You weren’t saving the world—you were surviving <em>hell</em> with a shotgun and a MIDI-metal soundtrack.
+  </p>
+
+  <p>
+    Shareware disks passed around like contraband. LAN parties summoned demons and friendships alike.<br>
+    It birthed modding culture. WAD files. Total conversions. And years of rage-fueled creativity.
+  </p>
+
+  <p>
+    At SkyBit, DOOM isn’t just a game—it’s a <strong>rite of passage</strong>.<br>
+    If you haven’t faced E1M1 with no armor and a keyboard-only layout… are you even plugged in?
+  </p>
+
+  <div class="track">
+    <p>🎧 <em>Listen to RetroCat’s take on it here...</em></p>
+    🎵 <strong>Hellstream .WAD:</strong> RetroCat - *DOOM*</strong><br><br>
+    <audio controls preload="auto" loop controlsList="nodownload">
+      <source src="Hellstream_WAD.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
   </div>
+
+  <a href="skybit-lore-terminal.html" class="back-button">⮐ Return to Lore Terminal</a>
+
+  <div class="footer">
+    SkyBit Lore Terminal • RetroCat Enterprises © 2025
+  </div>
+
 </body>
 </html>
